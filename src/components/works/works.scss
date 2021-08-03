@@ -1,0 +1,150 @@
+@import "../../global.scss";
+
+.works {
+  background-color: #dc143c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  .arrow {
+    height: 70px;
+    position: absolute;
+    cursor: pointer;
+
+    @include mobile {
+      height: 40px;
+    }
+
+    &.left {
+      left: 200px;
+      transform: rotateY(180deg);
+
+      @include mobile {
+        bottom: 8px;
+        padding-right: 100px;
+      }
+    }
+
+    &.right {
+      right: 200px;
+      @include mobile {
+        top: 8px;
+        padding-right: 100px;
+      }
+    }
+  }
+
+  .slider {
+    height: 500px;
+    display: flex;
+    position: absolute;
+    left: 0;
+    transition: all 1s ease-out;
+
+    @include mobile {
+      height: 70vh;
+      justify-content: center;
+    }
+
+    .container {
+      width: 100vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .item {
+        width: 950px;
+        height: 100%;
+        background-color: #fff;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @include mobile {
+          flex-direction: column;
+          margin: 5px;
+        }
+
+        .left {
+          flex: 4;
+          height: 80%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          .leftContainer {
+            width: 90%;
+            height: 70%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .imgContainer {
+              width: 60px;
+              height: 60px;
+              border-radius: 50%;
+              background-color: rgb(240, 129, 88);
+              display: flex;
+              align-items: center;
+              justify-content: center;
+
+              @include mobile {
+                width: 35px;
+                height: 35px;
+              }
+
+              img {
+                width: 45px;
+
+                @include mobile {
+                  width: 25px;
+                }
+              }
+            }
+            h2 {
+              font-size: 20px;
+
+              @include mobile {
+                font-size: 16px;
+              }
+            }
+            span {
+              font-size: 14px;
+              font-weight: 600;
+              text-decoration: underline;
+              cursor: pointer;
+
+              @include mobile {
+                font-size: 12px;
+              }
+            }
+          }
+        }
+        p {
+          font-size: 16px;
+
+          @include mobile {
+            font-size: 14px;
+          }
+        }
+
+        .right {
+          flex: 8;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          overflow: hidden;
+
+          img {
+            width: auto;
+            border-radius: 24px;
+            transform: rotate(-10deg);
+          }
+        }
+      }
+    }
+  }
+}
