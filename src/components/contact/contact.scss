@@ -8,6 +8,10 @@
     flex-direction: column;
   }
 
+  @include tablet {
+    flex-direction: column;
+  }
+
   .left {
     flex: 1;
     overflow: hidden;
@@ -45,6 +49,11 @@
           width: 200px;
           height: 20px;
         }
+
+        @include tablet {
+          width: 400px;
+          height: 20px;
+        }
       }
 
       textarea {
@@ -56,6 +65,12 @@
         @include mobile {
           margin-top: 10px;
           width: 200px;
+          height: 120px;
+        }
+
+        @include tablet {
+          margin-top: 10px;
+          width: 400px;
           height: 120px;
         }
       }

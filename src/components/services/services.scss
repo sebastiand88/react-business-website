@@ -25,6 +25,12 @@
       flex-wrap: wrap;
       justify-content: center;
     }
+
+    @include tablet {
+      margin: 10px 0;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
   }
 
   .container {
@@ -35,6 +41,10 @@
     flex-wrap: wrap;
 
     @include mobile {
+      width: 100%;
+    }
+
+    @include tablet {
       width: 100%;
     }
 
@@ -54,6 +64,12 @@
       @include mobile {
         width: 130px;
         height: 100px;
+      }
+
+      @include tablet {
+        margin-top: 68px;
+        width: 330px;
+        height: 200px;
       }
 
       h3 {

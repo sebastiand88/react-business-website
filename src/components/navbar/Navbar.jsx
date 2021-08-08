@@ -11,11 +11,15 @@ export default function Navbar({ menuOpen, setMenuOpen }) {
           </a>
           <div className="itemContainer">
             <Phone className="icon" />
-            <span>+44 7911 123456</span>
+            <span>
+              <a href="tel:+44 7911 123456">+44 7911 123456</a>
+            </span>
           </div>
           <div className="itemContainer">
             <Mail className="icon" />
-            <span>yourBusiness@email.com</span>
+            <span>
+              <a href="mailto:yourbusiness@email.com">yourBusiness@email.com</a>
+            </span>
           </div>
         </div>
         <div className="right">

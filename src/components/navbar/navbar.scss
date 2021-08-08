@@ -29,6 +29,10 @@
         @include mobile {
           font-size: 25px;
         }
+
+        @include tablet {
+          font-size: 19px;
+        }
       }
 
       .itemContainer {
@@ -48,6 +52,17 @@
         span {
           font-size: 18px;
           font-weight: 500;
+
+          a {
+            text-decoration: none;
+            color: inherit;
+          }
+
+          a:hover {
+            font-size: 21px;
+            color: #a83232;
+            transition: all 1s ease;
+          }
         }
       }
     }

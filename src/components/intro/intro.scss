@@ -9,6 +9,11 @@
     align-items: center;
   }
 
+  @include tablet {
+    flex-direction: column;
+    align-items: center;
+  }
+
   .left {
     flex: 0.5;
     overflow: hidden;
@@ -26,6 +31,10 @@
         align-items: flex-start;
       }
 
+      @include tablet {
+        align-items: flex-start;
+      }
+
       img {
         width: 90%;
         border-radius: 100px;
@@ -33,6 +42,11 @@
         @include mobile {
           height: 90%;
           width: 30%;
+        }
+
+        @include tablet {
+          height: 90%;
+          width: auto;
         }
       }
     }
@@ -50,6 +64,11 @@
       justify-content: center;
 
       @include mobile {
+        padding-left: 0;
+        align-items: center;
+      }
+
+      @include tablet {
         padding-left: 0;
         align-items: center;
       }
