@@ -19,11 +19,11 @@ export default function Services() {
     },
     {
       id: "web",
-      title: "Web",
+      title: "Service",
     },
     {
       id: "mobile",
-      title: "Mobile App",
+      title: "Mobile",
     },
     {
       id: "design",
